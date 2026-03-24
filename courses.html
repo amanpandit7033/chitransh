@@ -101,23 +101,34 @@
 <body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
   <!-- TopNavBar -->
   <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
-    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-      <div class="text-2xl font-black text-blue-700 uppercase tracking-widest font-headline">Chitransh Institute</div>
+    <div class="flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4 max-w-7xl mx-auto">
+      <div class="text-xl sm:text-2xl font-black text-blue-700 uppercase tracking-widest font-headline">Chitransh Institute</div>
       <div class="hidden md:flex items-center gap-8">
         <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="/">Home</a>
         <a class="text-blue-700 border-b-2 border-blue-700 pb-1 font-bold" href="courses.html">Courses</a>
         <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="about.html">About Us</a>
         <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="contact.html">Contact</a>
       </div>
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-3">
         <button
-          class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-bold tracking-tight shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">
+          class="bg-primary text-on-primary px-4 sm:px-6 py-2 rounded-md sm:rounded-lg text-sm sm:text-base font-bold tracking-tight shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">
           Enroll Now
+        </button>
+        <button id="mobile-nav-toggle" class="md:hidden rounded-md p-2 text-slate-700 hover:bg-slate-100" aria-label="Toggle navigation">
+          <span class="material-symbols-outlined">menu</span>
         </button>
       </div>
     </div>
+    <div id="mobile-nav" class="md:hidden hidden bg-white/95 backdrop-blur-xl border-t border-slate-200 shadow-sm">
+      <div class="px-4 sm:px-6 py-3 space-y-2">
+        <a class="block text-blue-700 font-medium font-headline" href="/">Home</a>
+        <a class="block text-slate-700 font-medium font-headline" href="courses.html">Courses</a>
+        <a class="block text-slate-700 font-medium font-headline" href="about.html">About Us</a>
+        <a class="block text-slate-700 font-medium font-headline" href="contact.html">Contact</a>
+      </div>
+    </div>
   </nav>
-  <main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+  <main class="pt-28 md:pt-32 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     <!-- Header Section -->
     <header class="mb-20">
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
@@ -125,7 +136,7 @@
           <span
             class="inline-block px-3 py-1 bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase rounded-full mb-4">ACADEMIC
             EXCELLENCE</span>
-          <h1 class="text-5xl md:text-7xl font-bold text-on-surface tracking-tight leading-tight">
+          <h1 class="text-4xl md:text-6xl font-bold text-on-surface tracking-tight leading-tight">
             Future-Ready <span class="text-primary">Curriculums.</span>
           </h1>
         </div>
@@ -347,10 +358,21 @@
         </ul>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200 text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-slate-200 text-center">
       <p class="text-slate-500 text-sm">© 2024 Chitransh Computer Institute. Architects of the Digital Future.</p>
     </div>
   </footer>
+  <script>
+    const mobileToggle = document.getElementById('mobile-nav-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    if (mobileToggle && mobileNav) {
+      mobileToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('hidden');
+        mobileToggle.querySelector('span').textContent = mobileNav.classList.contains('hidden') ? 'menu' : 'close';
+      });
+    }
+  </script>
 </body>
 
 </html>

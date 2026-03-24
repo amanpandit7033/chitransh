@@ -99,8 +99,8 @@
 <body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
     <!-- Top Navigation Bar -->
     <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
-        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-            <div class="text-2xl font-black text-blue-700 uppercase tracking-widest font-headline">
+        <div class="flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-xl sm:text-2xl font-black text-blue-700 uppercase tracking-widest font-headline">
                 Chitransh Institute
             </div>
             <div class="hidden md:flex items-center space-x-8">
@@ -112,15 +112,29 @@
                 <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors font-headline"
                     href="contact.html">Contact</a>
             </div>
-            <button
-                class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-bold font-headline hover:scale-[0.98] transition-transform duration-150">
-                Enroll Now
-            </button>
+            <div class="flex items-center gap-3">
+                <button
+                    class="bg-primary text-on-primary px-4 sm:px-6 py-2 rounded-md sm:rounded-lg text-sm sm:text-base font-bold font-headline hover:scale-[0.98] transition-transform duration-150">
+                    Enroll Now
+                </button>
+                <button id="mobile-nav-toggle" class="md:hidden rounded-md p-2 text-slate-700 hover:bg-slate-100"
+                    aria-label="Toggle navigation">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-nav" class="md:hidden hidden bg-white/95 backdrop-blur-xl border-t border-slate-200 shadow-sm">
+            <div class="px-4 sm:px-6 py-3 space-y-2">
+                <a class="block text-blue-700 font-medium font-headline" href="/">Home</a>
+                <a class="block text-slate-700 font-medium font-headline" href="courses.html">Courses</a>
+                <a class="block text-slate-700 font-medium font-headline" href="about.html">About Us</a>
+                <a class="block text-slate-700 font-medium font-headline" href="contact.html">Contact</a>
+            </div>
         </div>
     </nav>
     <main class="pt-20">
         <!-- Hero Section -->
-        <section class="relative min-h-[921px] flex items-center overflow-hidden bg-surface hero-gradient px-8">
+        <section class="relative min-h-[80vh] md:min-h-[921px] flex items-center overflow-hidden bg-surface hero-gradient px-4 sm:px-6 lg:px-8 py-12">
             <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 z-10">
                     <span
@@ -128,7 +142,7 @@
                         Future-Ready Education
                     </span>
                     <h1
-                        class="text-5xl md:text-7xl font-bold font-headline text-on-surface leading-[1.1] tracking-tight mb-8">
+                        class="text-4xl md:text-6xl lg:text-7xl font-bold font-headline text-on-surface leading-[1.1] tracking-tight mb-8">
                         Empowering <span class="text-primary">Digital Architects</span> for a New Era.
                     </h1>
                     <p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
@@ -151,7 +165,7 @@
                     <div class="relative w-full aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
                         <img alt="Modern lab environment" class="w-full h-full object-cover"
                             data-alt="focused students working in a minimalist high-tech computer lab with clean white desks and soft blue ambient lighting"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm5qHmiS_3g3y6zit4Qu0AxqqP2EuoR6C1L8SwKQx3kH85mCugeVL7DG_3zE_1VC6bjRmIDMetN0jdg4DKoy2Av5KyoQM5G9QmrFm3xXW1BCzWAFUm04REMmV3eYtS5DC5yUp8M-ECT_f-liixGl2J6gyxHYGcT5KnvKz2C1rCqzoDTU3-A606u8cFOI8_cptSG-shfiECPHMyyUZb-y4vHt_C5FkvJIBpIewlqOXBTPloGBnCm_deC2iKBnq-Yl0wvc7lh12Jv36s" />
+                            src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2" />
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
                     </div>
                     <!-- Decorative Elements -->
@@ -220,14 +234,14 @@
             </div>
         </section>
         <!-- Featured Courses Section (Bento Grid Style) -->
-        <section class="py-24 bg-surface px-8">
+        <section class="py-24 bg-surface px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16">
                     <p class="text-primary font-bold tracking-widest uppercase text-sm mb-4 font-label">Curated Learning
                         Paths</p>
                     <h2 class="text-4xl md:text-6xl font-bold font-headline tracking-tight">Featured Courses</h2>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[240px] md:auto-rows-[300px]">
                     <!-- ADCA: Large Featured -->
                     <div
                         class="md:col-span-8 md:row-span-2 group relative overflow-hidden rounded-3xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all">
@@ -291,7 +305,7 @@
             </div>
         </section>
         <!-- Testimonials Section -->
-        <section class="py-24 bg-surface-dim/20 px-8">
+        <section class="py-24 bg-surface-dim/20 px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
                     <div class="lg:col-span-4">
@@ -348,9 +362,9 @@
             </div>
         </section>
         <!-- CTA Section -->
-        <section class="py-24 px-8 overflow-hidden">
+        <section class="py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
             <div
-                class="max-w-7xl mx-auto bg-primary rounded-[2.5rem] p-12 md:p-24 relative overflow-hidden text-center md:text-left">
+                class="max-w-7xl mx-auto bg-primary rounded-[2.5rem] p-6 sm:p-10 md:p-24 relative overflow-hidden text-center md:text-left">
                 <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
                     <span class="material-symbols-outlined !text-[40rem] -translate-y-1/4 translate-x-1/4"
                         data-icon="cloud">cloud</span>
@@ -434,6 +448,17 @@
             </div>
         </div>
     </footer>
+    <script>
+        const mobileToggle = document.getElementById('mobile-nav-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        if (mobileToggle && mobileNav) {
+            mobileToggle.addEventListener('click', () => {
+                mobileNav.classList.toggle('hidden');
+                mobileToggle.querySelector('span').textContent = mobileNav.classList.contains('hidden') ? 'menu' : 'close';
+            });
+        }
+    </script>
 </body>
 
 </html>
