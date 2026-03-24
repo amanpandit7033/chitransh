@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Contact Us - Chitransh Institute</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-surface": "#161c22",
+            "inverse-surface": "#2b3137",
+            "inverse-primary": "#b1c5ff",
+            "on-primary-fixed-variant": "#00419e",
+            "surface": "#f7f9ff",
+            "secondary": "#595f65",
+            "on-background": "#161c22",
+            "on-secondary": "#ffffff",
+            "error": "#ba1a1a",
+            "on-secondary-fixed-variant": "#41474e",
+            "secondary-container": "#dde3eb",
+            "surface-dim": "#d5dae2",
+            "on-secondary-fixed": "#161c22",
+            "inverse-on-surface": "#ecf1f9",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed-dim": "#bfc8d0",
+            "surface-container-highest": "#dde3eb",
+            "on-error-container": "#93000a",
+            "surface-container-low": "#eff4fc",
+            "primary": "#0057cd",
+            "tertiary-fixed": "#dbe4ed",
+            "surface-bright": "#f7f9ff",
+            "on-primary-container": "#ffffff",
+            "on-tertiary-fixed-variant": "#3f484f",
+            "surface-container-high": "#e3e9f0",
+            "on-primary-fixed": "#001946",
+            "outline-variant": "#c2c6d8",
+            "tertiary-container": "#6f7880",
+            "on-tertiary-fixed": "#141d23",
+            "on-tertiary-container": "#01060b",
+            "outline": "#727787",
+            "surface-variant": "#dde3eb",
+            "surface-tint": "#0057ce",
+            "surface-container": "#e9eef6",
+            "primary-fixed": "#dae2ff",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#c1c7ce",
+            "on-surface-variant": "#424655",
+            "primary-container": "#0d6efd",
+            "on-error": "#ffffff",
+            "tertiary": "#565f67",
+            "secondary-fixed": "#dde3eb",
+            "on-secondary-container": "#5f656c",
+            "error-container": "#ffdad6",
+            "background": "#f7f9ff",
+            "primary-fixed-dim": "#b1c5ff",
+            "on-tertiary": "#ffffff"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(16px);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    .font-headline {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary">
+  <!-- Top Navigation Bar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm shadow-blue-900/5">
+    <div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+      <div class="text-2xl font-bold tracking-tighter text-blue-700 dark:text-blue-400 font-headline">
+        Chitransh Institute
+      </div>
+      <div class="hidden md:flex items-center gap-8 font-label text-sm tracking-wide">
+        <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="home.html">Home</a>
+        <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="courses.html">Courses</a>
+        <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="about.html">About Us</a>
+        <a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-600 pb-1 font-bold" href="#">Contact</a>
+      </div>
+      <button
+        class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-bold text-sm tracking-tight scale-95 active:scale-90 transition-transform shadow-lg shadow-primary/20">
+        Apply Now
+      </button>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+    <div
+      class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary-fixed via-surface to-surface">
+    </div>
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="max-w-3xl">
+        <span
+          class="inline-block px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-xs font-bold tracking-widest uppercase mb-6">Connect
+          With Us</span>
+        <h1 class="text-6xl md:text-8xl font-bold tracking-tighter text-on-surface mb-8 leading-[0.9]">
+          Get in <span class="text-primary italic">Touch</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed font-light max-w-2xl">
+          Whether you're an aspiring student, a researcher, or a partner, we're here to bridge the gap between your
+          ambition and your success.
+        </p>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content Grid -->
+  <main class="max-w-7xl mx-auto px-8 pb-32">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <!-- Contact Form (Bento Style Offset) -->
+      <section
+        class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm border border-outline-variant/10">
+        <div class="mb-10">
+          <h2 class="text-3xl font-bold tracking-tight mb-4">Send a Message</h2>
+          <p class="text-on-surface-variant font-body">Our team typically responds within 24 business hours.</p>
+        </div>
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label class="block text-xs font-bold tracking-widest uppercase text-on-surface-variant px-1">Full
+                Name</label>
+              <input
+                class="w-full bg-surface-container-high border-none rounded-lg px-4 py-4 focus:ring-2 focus:ring-primary/20 transition-all font-body text-on-surface"
+                placeholder="Jane Doe" type="text" />
+            </div>
+            <div class="space-y-2">
+              <label class="block text-xs font-bold tracking-widest uppercase text-on-surface-variant px-1">Email
+                Address</label>
+              <input
+                class="w-full bg-surface-container-high border-none rounded-lg px-4 py-4 focus:ring-2 focus:ring-primary/20 transition-all font-body text-on-surface"
+                placeholder="jane@example.com" type="email" />
+            </div>
+          </div>
+          <div class="space-y-2">
+            <label class="block text-xs font-bold tracking-widest uppercase text-on-surface-variant px-1">Phone
+              Number</label>
+            <input
+              class="w-full bg-surface-container-high border-none rounded-lg px-4 py-4 focus:ring-2 focus:ring-primary/20 transition-all font-body text-on-surface"
+              placeholder="+91 000 000 0000" type="tel" />
+          </div>
+          <div class="space-y-2">
+            <label
+              class="block text-xs font-bold tracking-widest uppercase text-on-surface-variant px-1">Message</label>
+            <textarea
+              class="w-full bg-surface-container-high border-none rounded-lg px-4 py-4 focus:ring-2 focus:ring-primary/20 transition-all font-body text-on-surface resize-none"
+              placeholder="How can we help you?" rows="5"></textarea>
+          </div>
+          <button
+            class="w-full bg-primary text-on-primary py-5 rounded-lg font-bold tracking-tight hover:shadow-xl hover:shadow-primary/30 active:scale-[0.98] transition-all flex items-center justify-center gap-3"
+            type="submit">
+            Send Message
+            <span class="material-symbols-outlined text-xl" data-icon="send">send</span>
+          </button>
+        </form>
+      </section>
+      <!-- Campus Information & Map -->
+      <aside class="lg:col-span-5 space-y-12">
+        <!-- Info Cards -->
+        <div class="space-y-8">
+          <div>
+            <h2 class="text-3xl font-bold tracking-tight mb-8">Our Campus</h2>
+            <div class="space-y-8">
+              <!-- Address -->
+              <div class="flex gap-6 group">
+                <div
+                  class="flex-shrink-0 w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined" data-icon="location_on" data-weight="fill">location_on</span>
+                </div>
+                <div class="space-y-1">
+                  <h3 class="text-sm font-bold tracking-widest uppercase text-on-surface-variant">Office Address</h3>
+                  <p class="text-lg leading-snug font-body">123 Tech Corridor, Knowledge Park III,<br />Greater Noida,
+                    UP 201310</p>
+                </div>
+              </div>
+              <!-- Phone -->
+              <div class="flex gap-6 group">
+                <div
+                  class="flex-shrink-0 w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined" data-icon="call" data-weight="fill">call</span>
+                </div>
+                <div class="space-y-1">
+                  <h3 class="text-sm font-bold tracking-widest uppercase text-on-surface-variant">Phone Numbers</h3>
+                  <p class="text-lg font-body">+91 120 456 7890</p>
+                  <p class="text-lg font-body">+91 987 654 3210</p>
+                </div>
+              </div>
+              <!-- Email -->
+              <div class="flex gap-6 group">
+                <div
+                  class="flex-shrink-0 w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined" data-icon="mail" data-weight="fill">mail</span>
+                </div>
+                <div class="space-y-1">
+                  <h3 class="text-sm font-bold tracking-widest uppercase text-on-surface-variant">Email Inquiries</h3>
+                  <p class="text-lg font-body">admissions@chitransh.edu.in</p>
+                  <p class="text-lg font-body">info@chitransh.edu.in</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Social Media Links -->
+          <div class="pt-8 border-t border-outline-variant/20">
+            <h3 class="text-sm font-bold tracking-widest uppercase text-on-surface-variant mb-6">Follow Our Journey</h3>
+            <div class="flex gap-4">
+              <a class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-all"
+                href="#">
+                <span class="material-symbols-outlined" data-icon="share">share</span>
+              </a>
+              <a class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-all"
+                href="#">
+                <span class="material-symbols-outlined" data-icon="public">public</span>
+              </a>
+              <a class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-all"
+                href="#">
+                <span class="material-symbols-outlined" data-icon="smart_display">smart_display</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Map Placeholder -->
+        <div class="relative group h-[300px] w-full rounded-2xl overflow-hidden shadow-2xl shadow-primary/5">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            data-alt="abstract stylized aerial map showing city grid and park layout in minimalist blue and white tones"
+            data-location="Greater Noida"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC65xzm31gg4hC3AvB0SFL0buBeL4Ta1H-cI_5v4rDKWybQXpCqh6StLqgrGsa2krWluKk-E3z93mcbpH3xDF_5anSljfCgxHUlSawOBaxrf-x7LFLml0beqABfoz4UdHswjrbmvWzbqoSKNhbeE2G7qqmvFgKzCgl7KxfXjWq3NmVKqvGFjfDOXId6mQ3mDtwHcOKbKHFiUzw-Cxy3wRa8vy8NDHqdEW-S-zkpi4gvqCyflPgIKgtAk3PEUnAGywDHugPCwnYy_fSC" />
+          <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+          <div class="absolute bottom-6 left-6 right-6 p-4 glass-effect rounded-xl border border-white/20">
+            <p class="text-xs font-bold tracking-widest uppercase text-primary mb-1">Campus Location</p>
+            <p class="text-sm font-medium">Click to open in Google Maps</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-slate-50 dark:bg-slate-950 w-full mt-auto border-t border-slate-200/50 dark:border-slate-800/50">
+    <div class="w-full px-8 py-12 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-6">
+      <div class="text-xl font-bold text-slate-900 dark:text-slate-100 font-headline">
+        Chitransh Institute
+      </div>
+      <div class="flex flex-wrap justify-center gap-8">
+        <a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors underline-offset-4 hover:underline font-label text-sm"
+          href="#">Privacy Policy</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors underline-offset-4 hover:underline font-label text-sm"
+          href="#">Terms of Service</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors underline-offset-4 hover:underline font-label text-sm"
+          href="#">Cookie Policy</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors underline-offset-4 hover:underline font-label text-sm"
+          href="#">Sitemap</a>
+      </div>
+      <div class="text-slate-500 dark:text-slate-400 text-sm font-body">
+        © 2024 Chitransh Institute of Technology. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Chitransh Institute | Architects of the Digital Future</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed": "#dbe4ed",
+                        "on-primary-container": "#ffffff",
+                        "secondary": "#595f65",
+                        "primary": "#0057cd",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#141d23",
+                        "on-tertiary-container": "#01060b",
+                        "inverse-on-surface": "#ecf1f9",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#c2c6d8",
+                        "background": "#f7f9ff",
+                        "surface-variant": "#dde3eb",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#dae2ff",
+                        "surface-dim": "#d5dae2",
+                        "on-secondary-fixed": "#161c22",
+                        "tertiary-fixed-dim": "#bfc8d0",
+                        "outline": "#727787",
+                        "tertiary": "#565f67",
+                        "on-background": "#161c22",
+                        "surface": "#f7f9ff",
+                        "surface-container": "#e9eef6",
+                        "surface-tint": "#0057ce",
+                        "inverse-primary": "#b1c5ff",
+                        "on-primary-fixed": "#001946",
+                        "on-primary-fixed-variant": "#00419e",
+                        "on-surface": "#161c22",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#e3e9f0",
+                        "tertiary-container": "#6f7880",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "primary-container": "#0d6efd",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#dde3eb",
+                        "secondary-fixed-dim": "#c1c7ce",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#5f656c",
+                        "inverse-surface": "#2b3137",
+                        "on-secondary-fixed-variant": "#41474e",
+                        "surface-bright": "#f7f9ff",
+                        "secondary-fixed": "#dde3eb",
+                        "surface-container-low": "#eff4fc",
+                        "secondary-fixed": "#dde3eb",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#424655",
+                        "on-tertiary-fixed-variant": "#3f484f"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #f7f9ff 0%, #dae2ff 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-2xl font-black text-blue-700 uppercase tracking-widest font-headline">
+                Chitransh Institute
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a class="text-blue-700 border-b-2 border-blue-700 pb-1 font-medium font-headline" href="home.html">Home</a>
+                <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors font-headline"
+                    href="courses.html">Courses</a>
+                <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors font-headline" href="about.html">About
+                    Us</a>
+                <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors font-headline"
+                    href="contact.html">Contact</a>
+            </div>
+            <button
+                class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-bold font-headline hover:scale-[0.98] transition-transform duration-150">
+                Enroll Now
+            </button>
+        </div>
+    </nav>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative min-h-[921px] flex items-center overflow-hidden bg-surface hero-gradient px-8">
+            <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 z-10">
+                    <span
+                        class="inline-block py-1 px-3 bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-[0.2em] uppercase rounded mb-6 font-label">
+                        Future-Ready Education
+                    </span>
+                    <h1
+                        class="text-5xl md:text-7xl font-bold font-headline text-on-surface leading-[1.1] tracking-tight mb-8">
+                        Empowering <span class="text-primary">Digital Architects</span> for a New Era.
+                    </h1>
+                    <p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                        Master the tools that define tomorrow. From advanced computing to creative engineering, we
+                        provide the precision training required to lead in the digital landscape.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold font-headline flex items-center justify-center gap-2 hover:shadow-xl transition-all">
+                            Explore Courses
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+                        </button>
+                        <button
+                            class="bg-surface-container-high text-on-surface px-8 py-4 rounded-lg font-bold font-headline hover:bg-surface-container-highest transition-all">
+                            View Syllabus
+                        </button>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="relative w-full aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+                        <img alt="Modern lab environment" class="w-full h-full object-cover"
+                            data-alt="focused students working in a minimalist high-tech computer lab with clean white desks and soft blue ambient lighting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm5qHmiS_3g3y6zit4Qu0AxqqP2EuoR6C1L8SwKQx3kH85mCugeVL7DG_3zE_1VC6bjRmIDMetN0jdg4DKoy2Av5KyoQM5G9QmrFm3xXW1BCzWAFUm04REMmV3eYtS5DC5yUp8M-ECT_f-liixGl2J6gyxHYGcT5KnvKz2C1rCqzoDTU3-A606u8cFOI8_cptSG-shfiECPHMyyUZb-y4vHt_C5FkvJIBpIewlqOXBTPloGBnCm_deC2iKBnq-Yl0wvc7lh12Jv36s" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+                    </div>
+                    <!-- Decorative Elements -->
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-2xl shadow-xl hidden md:block border border-outline-variant/10">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined" data-icon="verified"
+                                    data-weight="fill">verified</span>
+                            </div>
+                            <div>
+                                <p
+                                    class="text-xs font-bold text-on-surface-variant uppercase tracking-wider font-label">
+                                    Success Rate</p>
+                                <p class="text-2xl font-bold font-headline">98% Placement</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us Section (Editorial Layout) -->
+        <section class="py-24 bg-surface-container-low px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                    <div class="max-w-2xl">
+                        <h2 class="text-4xl md:text-5xl font-bold font-headline mb-6">Why Excellence is Our Only
+                            Standard.</h2>
+                        <p class="text-on-surface-variant text-lg leading-relaxed">We don't just teach software; we
+                            cultivate a mindset of innovation. Our methodology is built on three core pillars of digital
+                            mastery.</p>
+                    </div>
+                    <div
+                        class="text-primary font-bold font-headline text-lg border-b-2 border-primary/20 pb-2 flex items-center gap-2 cursor-pointer">
+                        Our Philosophy <span class="material-symbols-outlined" data-icon="north_east">north_east</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="group">
+                        <div class="text-primary mb-6 transition-transform group-hover:scale-110 duration-300">
+                            <span class="material-symbols-outlined !text-5xl" data-icon="terminal">terminal</span>
+                        </div>
+                        <h3 class="text-xl font-bold font-headline mb-4">Hands-on Curation</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Direct exposure to industry-standard hardware
+                            and software from day one. Real projects, real results.</p>
+                    </div>
+                    <div class="group">
+                        <div class="text-primary mb-6 transition-transform group-hover:scale-110 duration-300">
+                            <span class="material-symbols-outlined !text-5xl"
+                                data-icon="workspace_premium">workspace_premium</span>
+                        </div>
+                        <h3 class="text-xl font-bold font-headline mb-4">Elite Certification</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Our credentials are recognized by global tech
+                            giants, ensuring your portfolio stands out in any market.</p>
+                    </div>
+                    <div class="group">
+                        <div class="text-primary mb-6 transition-transform group-hover:scale-110 duration-300">
+                            <span class="material-symbols-outlined !text-5xl" data-icon="groups">groups</span>
+                        </div>
+                        <h3 class="text-xl font-bold font-headline mb-4">Expert Mentorship</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Learn from veterans who have spent decades
+                            architecting digital solutions for Fortune 500 companies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Courses Section (Bento Grid Style) -->
+        <section class="py-24 bg-surface px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-primary font-bold tracking-widest uppercase text-sm mb-4 font-label">Curated Learning
+                        Paths</p>
+                    <h2 class="text-4xl md:text-6xl font-bold font-headline tracking-tight">Featured Courses</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+                    <!-- ADCA: Large Featured -->
+                    <div
+                        class="md:col-span-8 md:row-span-2 group relative overflow-hidden rounded-3xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all">
+                        <img alt="Advanced Computing"
+                            class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity"
+                            data-alt="abstract close up of high-end laptop with complex code on screen and soft blue lighting bokeh in background"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4A5jTvL7_A-f8PRNjRrGN2fPIuRdB1cV3hToMeU2olfWEH-FwAKcpOWr_JA4LnkFa3Jv9NE8uoeEX9Nk9a6zzBemMPVzxcgRreDPRGfAH9qv6cHCLdMMV3JwvNfL-644-5TmRWxBvxgO3v6TsxFxxYyk-8zvoD-hLeifcCnajNXlGrZLTrPuZtDlOxC5_eYpd6lSGN57jf6nHw8QbmQkHWanabz2OaczgcjqfH01SaC12g3di_zUT-xxQMvTDQkI_B5s0t4YP5qKn" />
+                        <div class="relative h-full p-10 flex flex-col justify-between z-10">
+                            <div>
+                                <span
+                                    class="bg-primary text-on-primary px-3 py-1 rounded text-xs font-bold font-headline">POPULAR</span>
+                                <h3 class="text-4xl font-bold font-headline mt-6 mb-4">ADCA</h3>
+                                <p class="text-on-surface-variant max-w-md text-lg">Advanced Diploma in Computer
+                                    Applications. A comprehensive 12-month program covering software engineering, data
+                                    management, and web architecture.</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex gap-4">
+                                    <div class="flex items-center gap-1 text-sm font-medium"><span
+                                            class="material-symbols-outlined text-primary"
+                                            data-icon="schedule">schedule</span> 12 Months</div>
+                                    <div class="flex items-center gap-1 text-sm font-medium"><span
+                                            class="material-symbols-outlined text-primary"
+                                            data-icon="calendar_today">calendar_today</span> Next Batch: Sept 1st</div>
+                                </div>
+                                <button
+                                    class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center hover:scale-110 transition-transform">
+                                    <span class="material-symbols-outlined"
+                                        data-icon="arrow_forward">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DCA: Standard -->
+                    <div
+                        class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-3xl bg-surface-container-high hover:bg-primary hover:text-on-primary transition-all duration-500">
+                        <div class="p-8 h-full flex flex-col justify-between">
+                            <span class="material-symbols-outlined !text-4xl opacity-40"
+                                data-icon="laptop_mac">laptop_mac</span>
+                            <div>
+                                <h3 class="text-2xl font-bold font-headline mb-2">DCA</h3>
+                                <p class="text-sm opacity-80 font-medium">Diploma in Computer Applications. Essential
+                                    mastery of digital tools for modern office environments.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AutoCAD: Standard -->
+                    <div
+                        class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-3xl bg-surface-container-lowest border border-outline-variant/20 hover:border-primary transition-all">
+                        <div class="p-8 h-full flex flex-col justify-between">
+                            <span class="material-symbols-outlined !text-4xl text-primary"
+                                data-icon="architecture">architecture</span>
+                            <div>
+                                <h3 class="text-2xl font-bold font-headline mb-2 text-on-surface">AutoCAD</h3>
+                                <p class="text-sm text-on-surface-variant font-medium">Precision design and
+                                    architectural drafting for the creators of our physical and digital world.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials Section -->
+        <section class="py-24 bg-surface-dim/20 px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+                    <div class="lg:col-span-4">
+                        <h2 class="text-4xl font-bold font-headline mb-6">Our Graduates <br />Speak for Us.</h2>
+                        <div class="flex gap-1 mb-6 text-primary">
+                            <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+                            <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+                            <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+                            <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+                            <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+                        </div>
+                        <p class="text-on-surface-variant italic">"A curriculum that matches the speed of the industry.
+                            I went from a novice to a certified professional in months."</p>
+                    </div>
+                    <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div
+                            class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
+                            <p class="text-on-surface font-medium mb-8 leading-relaxed">"The practical approach at
+                                Chitransh is what sets it apart. The ADCA course gave me the confidence to handle
+                                real-world software architecture challenges."</p>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high">
+                                    <img alt="Alumni Portrait" class="w-full h-full object-cover"
+                                        data-alt="portrait of a young professional man with a confident smile in a modern office background"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfzOHTBYy1c1fjwLeb18MvM_sP7nuweHg7RS9gtljUbqN1zZeHJLx3YORGiEHoiLaX3jxjiTEUoGgHJlgEx1u6bY-9g9KMZyuyyl3H7i8Unpx9mzpPkhNS1d_1dBg8cqWYy5rKvAHH3w0Nh1e-EQnm_yWoaZJ6nScs1d5dyiZsiCXLeDhr6KNyLW07D6fBe-2EQod3Jfd6nkG4siK_7USCPebqyIdBqiN_-xp0NXrr7Dx1weSSf5dWAWNrq3BZtrm8AtUyxQcAWJlL" />
+                                </div>
+                                <div>
+                                    <h4 class="font-bold font-headline">Rahul Sharma</h4>
+                                    <p class="text-xs text-on-surface-variant uppercase font-label tracking-wider">Lead
+                                        Dev, TechGlobal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
+                            <p class="text-on-surface font-medium mb-8 leading-relaxed">"The AutoCAD training was
+                                world-class. The instructors didn't just teach the software; they taught the logic of
+                                design and engineering precision."</p>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high">
+                                    <img alt="Alumni Portrait" class="w-full h-full object-cover"
+                                        data-alt="portrait of a smiling young woman professional in a creative studio setting"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXAL9KLQXmTRmvHDTpUYpYWRRK21DwM3v7Qr1xq3WllcGxEdN4IdWYU8wa8hLlNJ4ZidM_ZPk9UN1uDfs3yYskd2f2V0Hic3kZoYqABqu7FZ1lfdZniIrKHeHjVNeXvCY1BjkO-cHOQGXPv8s8kZsKcAww7OozfXPXMXcMqAyPLRwV4jz_XcodWVEz7q1v5I1YSZ2xGpm7zmZz0e2FHqq-6aGwLOOmmTcvj0-XIQXkEeR5xWgfHBsM7Gx61RJDNVQkpEoa4gOqWlGo" />
+                                </div>
+                                <div>
+                                    <h4 class="font-bold font-headline">Priya Verma</h4>
+                                    <p class="text-xs text-on-surface-variant uppercase font-label tracking-wider">Jr.
+                                        Architect, StudioX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-24 px-8 overflow-hidden">
+            <div
+                class="max-w-7xl mx-auto bg-primary rounded-[2.5rem] p-12 md:p-24 relative overflow-hidden text-center md:text-left">
+                <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+                    <span class="material-symbols-outlined !text-[40rem] -translate-y-1/4 translate-x-1/4"
+                        data-icon="cloud">cloud</span>
+                </div>
+                <div class="relative z-10 max-w-2xl">
+                    <h2 class="text-4xl md:text-6xl font-bold font-headline text-on-primary mb-8 leading-tight">Ready to
+                        build the future?</h2>
+                    <p class="text-xl text-on-primary/80 mb-12">Applications are now open for the Autumn 2024 cohort.
+                        Secure your seat in the digital revolution today.</p>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
+                        <button
+                            class="bg-surface-container-lowest text-primary px-10 py-5 rounded-xl font-bold font-headline hover:bg-white transition-all shadow-xl">
+                            Apply Now
+                        </button>
+                        <button
+                            class="border-2 border-on-primary/30 text-on-primary px-10 py-5 rounded-xl font-bold font-headline hover:bg-on-primary/10 transition-all">
+                            Talk to an Advisor
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="md:col-span-1">
+                <div class="text-xl font-bold text-slate-900 mb-6 font-headline">Chitransh Institute</div>
+                <p class="text-slate-500 text-sm leading-relaxed mb-8">Architects of the Digital Future. Delivering
+                    world-class technical education since 2012.</p>
+                <div class="flex gap-4">
+                    <div
+                        class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-on-primary transition-all cursor-pointer">
+                        <span class="material-symbols-outlined !text-xl" data-icon="facebook">social_leaderboard</span>
+                    </div>
+                    <div
+                        class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-on-primary transition-all cursor-pointer">
+                        <span class="material-symbols-outlined !text-xl" data-icon="language">language</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold font-headline mb-6 text-slate-900 uppercase tracking-widest text-xs">Resources</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-slate-500 text-sm hover:text-blue-500 hover:underline decoration-blue-500/30 underline-offset-4 transition-all"
+                            href="#">Course Catalog</a></li>
+                    <li><a class="text-slate-500 text-sm hover:text-blue-500 hover:underline decoration-blue-500/30 underline-offset-4 transition-all"
+                            href="#">Certification Verifier</a></li>
+                    <li><a class="text-slate-500 text-sm hover:text-blue-500 hover:underline decoration-blue-500/30 underline-offset-4 transition-all"
+                            href="#">Student Portal</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold font-headline mb-6 text-slate-900 uppercase tracking-widest text-xs">Community</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-slate-500 text-sm hover:text-blue-500 hover:underline decoration-blue-500/30 underline-offset-4 transition-all"
+                            href="#">Alumni Network</a></li>
+                    <li><a class="text-slate-500 text-sm hover:text-blue-500 hover:underline decoration-blue-500/30 underline-offset-4 transition-all"
+                            href="#">Career Services</a></li>
+                    <li><a class="text-slate-500 text-sm hover:text-blue-500 hover:underline decoration-blue-500/30 underline-offset-4 transition-all"
+                            href="#">Success Stories</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold font-headline mb-6 text-slate-900 uppercase tracking-widest text-xs">Legal</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-slate-500 text-sm hover:text-blue-500 hover:underline decoration-blue-500/30 underline-offset-4 transition-all"
+                            href="#">Privacy Policy</a></li>
+                    <li><a class="text-slate-500 text-sm hover:text-blue-500 hover:underline decoration-blue-500/30 underline-offset-4 transition-all"
+                            href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200/50 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-500 text-sm">© 2024 Chitransh Computer Institute. Architects of the Digital Future.</p>
+            <div class="flex gap-6 text-slate-400">
+                <span class="material-symbols-outlined !text-xl cursor-pointer hover:text-primary">rss_feed</span>
+                <span
+                    class="material-symbols-outlined !text-xl cursor-pointer hover:text-primary">alternate_email</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

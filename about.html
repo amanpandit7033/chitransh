@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>About Us | Chitransh Institute</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "tertiary-fixed": "#dbe4ed",
+            "on-primary-container": "#ffffff",
+            "secondary": "#595f65",
+            "primary": "#0057cd",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#141d23",
+            "on-tertiary-container": "#01060b",
+            "inverse-on-surface": "#ecf1f9",
+            "error": "#ba1a1a",
+            "outline-variant": "#c2c6d8",
+            "background": "#f7f9ff",
+            "surface-variant": "#dde3eb",
+            "on-error-container": "#93000a",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#dae2ff",
+            "surface-dim": "#d5dae2",
+            "on-secondary-fixed": "#161c22",
+            "tertiary-fixed-dim": "#bfc8d0",
+            "outline": "#727787",
+            "tertiary": "#565f67",
+            "on-background": "#161c22",
+            "surface": "#f7f9ff",
+            "surface-container": "#e9eef6",
+            "surface-tint": "#0057ce",
+            "inverse-primary": "#b1c5ff",
+            "on-primary-fixed": "#001946",
+            "on-primary-fixed-variant": "#00419e",
+            "on-surface": "#161c22",
+            "on-secondary": "#ffffff",
+            "surface-container-high": "#e3e9f0",
+            "tertiary-container": "#6f7880",
+            "primary-fixed-dim": "#b1c5ff",
+            "primary-container": "#0d6efd",
+            "error-container": "#ffdad6",
+            "surface-container-highest": "#dde3eb",
+            "secondary-fixed-dim": "#c1c7ce",
+            "on-primary": "#ffffff",
+            "on-secondary-container": "#5f656c",
+            "inverse-surface": "#2b3137",
+            "on-secondary-fixed-variant": "#41474e",
+            "surface-bright": "#f7f9ff",
+            "secondary-fixed": "#dde3eb",
+            "surface-container-low": "#eff4fc",
+            "secondary-fixed": "#dde3eb",
+            "surface-container-lowest": "#ffffff",
+            "on-surface-variant": "#424655",
+            "on-tertiary-fixed-variant": "#3f484f"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9ff;
+      color: #161c22;
+    }
+
+    .font-headline {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(16px);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+      <div class="text-2xl font-black text-blue-700 uppercase tracking-widest font-headline">
+        Chitransh Institute
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="home.html">Home</a>
+        <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="courses.html">Courses</a>
+        <a class="text-blue-700 border-b-2 border-blue-700 pb-1 font-headline font-bold" href="about.html">About Us</a>
+        <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="contact.html">Contact</a>
+      </div>
+      <button
+        class="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold transition-all hover:scale-105 active:scale-95 duration-150">
+        Enroll Now
+      </button>
+    </div>
+  </nav>
+  <main class="pt-24">
+    <!-- Hero Section: The Vision -->
+    <section class="relative px-8 py-24 overflow-hidden">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="z-10">
+          <span
+            class="inline-block px-4 py-1 rounded-full bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase mb-6 font-label">Our
+            Legacy</span>
+          <h1 class="text-5xl md:text-7xl font-headline font-bold text-on-surface leading-tight mb-8">
+            Architecting the <span class="text-primary">Digital Frontier.</span>
+          </h1>
+          <p class="text-xl text-on-surface-variant leading-relaxed max-w-xl">
+            At Chitransh Institute, we don't just teach technology—we cultivate the mindset of innovation. Our mission
+            is to bridge the digital divide by transforming students into tech leaders.
+          </p>
+        </div>
+        <div class="relative">
+          <div class="aspect-square rounded-full bg-surface-container-high absolute -top-12 -right-12 w-64 h-64 -z-10">
+          </div>
+          <div
+            class="rounded-xl overflow-hidden shadow-2xl transform lg:rotate-3 hover:rotate-0 transition-transform duration-700">
+            <img alt="Digital transformation" class="w-full h-[500px] object-cover"
+              data-alt="Modern collaborative workspace with diverse team discussing software architecture on large screens in a bright, high-tech office environment"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJtf-tCBfjrOsNlOTmkq2xA73XCtZ2gHsEyf6xGamzlb8ShRoW9vGa7aSp_86nAmzrF8EqOtIpA8clwarJ_Jze7MDIS3UwAtMDcRLYZRyfieCgl4zCd1tYVZslEu0rq7idn4Pl47Zigz3c24t6VBERatTj5vnmpyT-ElvpozpA3Gw3AMT4O4MuavGxE5IQVzVjBAyXkOxeq33YYCRpgS8qgLc969XTAO-UBZRQKTKPP2fu3KafLIqx-8b--obMXbeDhhOkA65izz6f" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mission & Values: Tonal Shift -->
+    <section class="bg-surface-container-low py-24 px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-headline font-bold mb-4">Our Core Mission</h2>
+            <div class="h-1 w-24 bg-primary mb-8"></div>
+          </div>
+          <div class="md:w-1/2">
+            <p class="text-on-surface-variant text-lg leading-relaxed">
+              Since our inception, we have been committed to providing high-quality, accessible technical education. We
+              believe that digital literacy is a fundamental right, not a privilege. By integrating industry-standard
+              tools with academic rigor, we empower our students to solve real-world problems.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6 text-primary">
+              <span class="material-symbols-outlined" data-icon="hub">hub</span>
+            </div>
+            <h3 class="text-xl font-headline font-bold mb-4">Inclusion</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Breaking barriers to entry for underrepresented
+              communities in the tech sector.</p>
+          </div>
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6 text-primary">
+              <span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+            </div>
+            <h3 class="text-xl font-headline font-bold mb-4">Agility</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Constantly evolving our curriculum to match the
+              rapid pace of digital innovation.</p>
+          </div>
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6 text-primary">
+              <span class="material-symbols-outlined" data-icon="verified">verified</span>
+            </div>
+            <h3 class="text-xl font-headline font-bold mb-4">Excellence</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Maintaining rigorous standards that ensure our
+              graduates are industry-ready.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modern Infrastructure: Bento Grid -->
+    <section class="py-24 px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-16">
+          <span class="text-primary font-bold tracking-widest text-xs uppercase font-label">The Campus</span>
+          <h2 class="text-4xl font-headline font-bold mt-2">Engineered for Success</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+          <div class="md:col-span-8 bg-surface-container-high rounded-xl overflow-hidden relative group">
+            <img alt="Smart Labs"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              data-alt="Ultra-modern computer lab with ergonomic seating, dual monitor setups, and glowing blue ambient lighting for focused technical study"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbjfC1grgqOwYWwKxQNqzDxCDzUk67v_JiWOMquJapwpa9vozzewgQsOlxuhAsRGOGJaoTEToorTVFdWFMIWNgtmsn1DbGZzMRLnCceVhjKFkwH8BW6kRKorgmsa5gm9rtYg5Nnugss-qEDeq6NYAX5pCTyNuZm95W1Yi9YeuX7oYjO5ocW8548aIovKm4i2W_xXBU2ATr9fKEfY06Tt6nvVFNE-wQ4cXRGL90VoRzqc4JT5OmXZY7Dve6NjZN5gZ3cQEvFS0DRZfI" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent p-8 flex flex-col justify-end">
+              <h4 class="text-white text-2xl font-headline font-bold">Advanced Neural Labs</h4>
+              <p class="text-white/80 text-sm max-w-sm">Equipped with high-performance workstations for AI and Cloud
+                research.</p>
+            </div>
+          </div>
+          <div class="md:col-span-4 bg-surface-container-high rounded-xl overflow-hidden relative group">
+            <img alt="Creative Space"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              data-alt="Clean minimal conference room with glass walls and professional atmosphere for student project presentations"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPa-ml1LHcXdppS9uVntBDNrTaumBioLdRdbBchdBzx_DGmDTMedE9MVKNM5Rc1-MTBAQ-x6knYEZraDpkfhX88x4Bu9CYzsPE2EoT8tq0O5Msnqt7cYS9vBF7OCQVZzjMTP_cpmssHhirH61AJOck9Pv3C4yfydRxCtbQ2JOcihw3HgCeIVecOOYP76Y1MOJB5yGplpwVuoABKetmO5l-fNkkgoDs1nuO_Qq0K2u1iCDoTNg1-RXOyCkIrbo6Bu0Nce-iB1JpdT9o" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent p-6 flex flex-col justify-end">
+              <h4 class="text-white text-xl font-headline font-bold">Collaboration Zones</h4>
+            </div>
+          </div>
+          <div class="md:col-span-4 bg-primary rounded-xl p-8 flex flex-col justify-center text-on-primary">
+            <span class="material-symbols-outlined text-5xl mb-4" data-icon="wifi">wifi</span>
+            <h4 class="text-2xl font-headline font-bold mb-2">Gigabit Campus</h4>
+            <p class="text-on-primary/80 text-sm">Seamless connectivity across every square inch of the institute.</p>
+          </div>
+          <div class="md:col-span-8 bg-surface-container-high rounded-xl overflow-hidden relative group">
+            <img alt="Library"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              data-alt="Spacious modern library with digital archive access and comfortable study pods for quiet research"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl1x1gqtCDWmnXDGSNXvsJb71ioH2Xszj4PLvBvfYJB125P1svL8H2bFtIicJhASC81ulQJDssMb06WJIFg1MTiETTyCxQTyWREyKU4nKF6-BBDUtlfNQqingJmbW9PQLdfow9Hza2EkrSePK9lVlkrHmfHU-a3e7sA1XI579U2suS8E-B4KJaM1MEoBbVEpZPjiQt6jIAn97zfPgZoBlB2oj2l-RolaK7PNxgpdtiDDq4Qeq8IJeyry4oXHTpDMdFWTqv6myPl1Ge" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent p-8 flex flex-col justify-end text-right items-end">
+              <h4 class="text-white text-2xl font-headline font-bold">Digital Resource Center</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Faculty Section: Human Touch -->
+    <section class="bg-white py-24 px-8">
+      <div class="max-w-7xl mx-auto text-center mb-20">
+        <h2 class="text-4xl font-headline font-bold mb-6">Led by Industry Titans</h2>
+        <p class="text-on-surface-variant max-w-2xl mx-auto">
+          Our faculty consists of PhD researchers, lead developers from Fortune 500 companies, and pioneers in emerging
+          tech.
+        </p>
+      </div>
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <!-- Faculty 1 -->
+        <div class="group">
+          <div class="aspect-[3/4] rounded-xl overflow-hidden mb-6 bg-surface-container">
+            <img alt="Faculty Member"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+              data-alt="Professional portrait of a male professor in a sharp suit, looking confident against a blurred tech office background"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBukTDHJ2qJQzhzpOr6bt04GaTuKu0AmkG1nS58aKXK-xBfvyiJbptOSRtMfqk0GRAXyoZMVP59gZjuq1_jBKY-jlPzCju5p5Ix7xlCWXnY67-WwL-XJG5wviLbi80nubfQiC6mqSHdJI0zx2DAKpQOoC2ySRjP9rItX_VKMUDcFrWa5me5HwdVfoCcP6MmfHRx8usROOi_BFDYst51LPLSvhfX3539A7vXu_48JN3hzBCpWxcGT9VaeG45vTNoHL7S--xPjEJFga7p" />
+          </div>
+          <h3 class="text-lg font-headline font-bold">Dr. Aryan Sharma</h3>
+          <p class="text-primary text-xs font-bold uppercase tracking-wider mb-2 font-label">Dean of AI Studies</p>
+          <p class="text-on-surface-variant text-sm">Former Senior Scientist at DeepMind with 15+ years experience.</p>
+        </div>
+        <!-- Faculty 2 -->
+        <div class="group">
+          <div class="aspect-[3/4] rounded-xl overflow-hidden mb-6 bg-surface-container">
+            <img alt="Faculty Member"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+              data-alt="Professional portrait of a female software architect with glasses, smiling confidently in a modern tech-focused setting"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsrPJiwMkkIS91Tc0e4EJ19YUs7Jp_loFFohE80yz_vEj5a5zC7lJw4MJ4RuNeGhStNKH2x8rOyYiT2icolZ01jJ1kLKR0i4NhICY21YyJNnv-XVhbD3Lrkqut1VTEtSVeSTpkk5PYlJZcBZIP1CL_LXzZ5k9DFlt3vLmAH08u4uIxQE_vdyT5pa7BkMicGzSCl4OufDWqu1pP4xRReOO9WAQvJRBT_9U6wf-kcRVLVJck6fgj81vZc_oJIuNxDX3bRpLsQkb965cv" />
+          </div>
+          <h3 class="text-lg font-headline font-bold">Priya Verma</h3>
+          <p class="text-primary text-xs font-bold uppercase tracking-wider mb-2 font-label">Lead Web Architect</p>
+          <p class="text-on-surface-variant text-sm">Full-stack specialist and contributor to major open-source
+            frameworks.</p>
+        </div>
+        <!-- Faculty 3 -->
+        <div class="group">
+          <div class="aspect-[3/4] rounded-xl overflow-hidden mb-6 bg-surface-container">
+            <img alt="Faculty Member"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+              data-alt="Portrait of a young male tech entrepreneur with a friendly expression, representing a modern approach to education"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqbiuS5OZvsAOgA_DZHo8JvSpHsEgnT3zvQp5Z0cFB42yk6t_fBx1U80ONWCMXcweRy7cxPTtOPx3pXA4JaylZKxHwTJ-BFW-RkSTVmNDy7Jp4_3ORRpdkhvdEwhEWPd8pAxdB4UMbYfSI4T7gsk1Bs8LV_LDKUVAiuzt5ABBThP7ynPBiGV7ZphhBcOKbeeb78iCCpPwRsmrlmiOckPLnUa1MqXS1L4xyUSGs5L2U72G09w-H74v3eF-iyfORdfrB3NgWEbgrI7ZI" />
+          </div>
+          <h3 class="text-lg font-headline font-bold">Rohan Mehta</h3>
+          <p class="text-primary text-xs font-bold uppercase tracking-wider mb-2 font-label">Cybersecurity Specialist
+          </p>
+          <p class="text-on-surface-variant text-sm">Expert in ethical hacking and blockchain security protocols.</p>
+        </div>
+        <!-- Faculty 4 -->
+        <div class="group">
+          <div class="aspect-[3/4] rounded-xl overflow-hidden mb-6 bg-surface-container">
+            <img alt="Faculty Member"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+              data-alt="Close-up portrait of an experienced female educator with a warm and inspiring gaze, set against a library backdrop"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoyWoWAQQMt3V6qczNvc8G6Vj5mD5QA8q-5rgMktU5E9R_nmKHgDoXOGuGC_xJBi0-42nGRlXrjB9y-qXmHIIxTf6iaTcTJGDj1nO6y98W8bpcsoRkdiOVvTrXDDX3WAvPF61URwhMzro42mQLzg3f18xXk2JnI2LhwOPNeoiGu5fC_Jiw0lbx3HZpuibMe9SDupPAfMkNZNZlNZ62afQeqWkWN525xWrQjPmXd4sv-Fq2jdDw2gVP1Og5WS86K0m8TAJnXes3qrF0" />
+          </div>
+          <h3 class="text-lg font-headline font-bold">Anjali Gupta</h3>
+          <p class="text-primary text-xs font-bold uppercase tracking-wider mb-2 font-label">Data Science Lead</p>
+          <p class="text-on-surface-variant text-sm">Focusing on ethical data usage and predictive analytics modeling.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-24 px-8 relative overflow-hidden">
+      <div class="max-w-5xl mx-auto bg-primary rounded-3xl p-12 md:p-20 text-center relative z-10 shadow-2xl">
+        <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-primary mb-8 leading-tight">Ready to start your
+          journey into the future?</h2>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            class="bg-on-primary text-primary px-10 py-4 rounded-xl font-bold hover:bg-primary-fixed transition-colors">Apply
+            for Admission</button>
+          <button
+            class="border-2 border-on-primary/30 text-on-primary px-10 py-4 rounded-xl font-bold hover:bg-on-primary/10 transition-colors">Download
+            Prospectus</button>
+        </div>
+        <!-- Decorative Elements -->
+        <div class="absolute -top-10 -left-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="w-full border-t border-slate-200 bg-slate-50">
+    <div
+      class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto font-['Inter'] text-sm leading-relaxed">
+      <div class="col-span-1">
+        <div class="text-xl font-bold text-slate-900 mb-6">Chitransh Institute</div>
+        <p class="text-slate-500 mb-6">Designing tomorrow's engineers and architects of the digital age with passion and
+          precision.</p>
+        <div class="flex space-x-4">
+          <div
+            class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all cursor-pointer">
+            <span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Resources</h4>
+        <ul class="space-y-4">
+          <li><a
+              class="text-slate-500 hover:text-blue-500 transition-colors hover:underline decoration-blue-500/30 underline-offset-4"
+              href="#">Course Catalog</a></li>
+          <li><a
+              class="text-slate-500 hover:text-blue-500 transition-colors hover:underline decoration-blue-500/30 underline-offset-4"
+              href="#">Certification Verifier</a></li>
+          <li><a
+              class="text-slate-500 hover:text-blue-500 transition-colors hover:underline decoration-blue-500/30 underline-offset-4"
+              href="#">Student Portal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Institute</h4>
+        <ul class="space-y-4">
+          <li><a
+              class="text-slate-500 hover:text-blue-500 transition-colors hover:underline decoration-blue-500/30 underline-offset-4 font-semibold text-blue-600"
+              href="#">About Us</a></li>
+          <li><a
+              class="text-slate-500 hover:text-blue-500 transition-colors hover:underline decoration-blue-500/30 underline-offset-4"
+              href="#">Alumni Network</a></li>
+          <li><a
+              class="text-slate-500 hover:text-blue-500 transition-colors hover:underline decoration-blue-500/30 underline-offset-4"
+              href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Stay Connected</h4>
+        <div class="flex gap-2 mb-4">
+          <input class="bg-white border-none focus:ring-2 focus:ring-primary rounded-lg text-sm flex-grow"
+            placeholder="Your email" type="email" />
+          <button class="bg-primary text-white p-2 rounded-lg">
+            <span class="material-symbols-outlined" data-icon="send">send</span>
+          </button>
+        </div>
+        <p class="text-[10px] text-slate-400">Subscribe for updates and digital news.</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-8 pb-12">
+      <div class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-slate-500">© 2024 Chitransh Computer Institute. Architects of the Digital Future.</p>
+        <div class="flex gap-8">
+          <a class="text-slate-400 hover:text-primary transition-colors" href="#">Terms of Service</a>
+          <a class="text-slate-400 hover:text-primary transition-colors" href="#">Cookies Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

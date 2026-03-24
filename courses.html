@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Course Catalog | Chitransh Institute</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "tertiary-fixed": "#dbe4ed",
+            "on-primary-container": "#ffffff",
+            "secondary": "#595f65",
+            "primary": "#0057cd",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#141d23",
+            "on-tertiary-container": "#01060b",
+            "inverse-on-surface": "#ecf1f9",
+            "error": "#ba1a1a",
+            "outline-variant": "#c2c6d8",
+            "background": "#f7f9ff",
+            "surface-variant": "#dde3eb",
+            "on-error-container": "#93000a",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#dae2ff",
+            "surface-dim": "#d5dae2",
+            "on-secondary-fixed": "#161c22",
+            "tertiary-fixed-dim": "#bfc8d0",
+            "outline": "#727787",
+            "tertiary": "#565f67",
+            "on-background": "#161c22",
+            "surface": "#f7f9ff",
+            "surface-container": "#e9eef6",
+            "surface-tint": "#0057ce",
+            "inverse-primary": "#b1c5ff",
+            "on-primary-fixed": "#001946",
+            "on-primary-fixed-variant": "#00419e",
+            "on-surface": "#161c22",
+            "on-secondary": "#ffffff",
+            "surface-container-high": "#e3e9f0",
+            "tertiary-container": "#6f7880",
+            "primary-fixed-dim": "#b1c5ff",
+            "primary-container": "#0d6efd",
+            "error-container": "#ffdad6",
+            "surface-container-highest": "#dde3eb",
+            "secondary-fixed-dim": "#c1c7ce",
+            "on-primary": "#ffffff",
+            "on-secondary-container": "#5f656c",
+            "inverse-surface": "#2b3137",
+            "on-secondary-fixed-variant": "#41474e",
+            "surface-bright": "#f7f9ff",
+            "secondary-fixed": "#dde3eb",
+            "surface-container-low": "#eff4fc",
+            "secondary-fixed": "#dde3eb",
+            "surface-container-lowest": "#ffffff",
+            "on-surface-variant": "#424655",
+            "on-tertiary-fixed-variant": "#3f484f"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+      <div class="text-2xl font-black text-blue-700 uppercase tracking-widest font-headline">Chitransh Institute</div>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="home.html">Home</a>
+        <a class="text-blue-700 border-b-2 border-blue-700 pb-1 font-bold" href="courses.html">Courses</a>
+        <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="about.html">About Us</a>
+        <a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="contact.html">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <button
+          class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-bold tracking-tight shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">
+          Enroll Now
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+    <!-- Header Section -->
+    <header class="mb-20">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+        <div class="max-w-2xl">
+          <span
+            class="inline-block px-3 py-1 bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase rounded-full mb-4">ACADEMIC
+            EXCELLENCE</span>
+          <h1 class="text-5xl md:text-7xl font-bold text-on-surface tracking-tight leading-tight">
+            Future-Ready <span class="text-primary">Curriculums.</span>
+          </h1>
+        </div>
+        <div class="md:text-right">
+          <p class="text-on-surface-variant max-w-xs md:ml-auto font-medium">
+            Master the tools of tomorrow with our industry-vetted certification programs.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- Search & Filter Bar (The Soft Well) -->
+    <div class="mb-16 flex flex-col md:flex-row gap-6">
+      <div class="relative flex-1 group">
+        <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+        <input
+          class="w-full pl-12 pr-6 py-4 bg-surface-container-high border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline"
+          placeholder="Search for your next career move..." type="text" />
+      </div>
+      <div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
+        <button class="whitespace-nowrap px-6 py-4 bg-primary text-on-primary rounded-xl font-semibold">All
+          Courses</button>
+        <button
+          class="whitespace-nowrap px-6 py-4 bg-surface-container-low hover:bg-surface-container-high transition-colors text-on-surface-variant rounded-xl font-semibold">Accounting</button>
+        <button
+          class="whitespace-nowrap px-6 py-4 bg-surface-container-low hover:bg-surface-container-high transition-colors text-on-surface-variant rounded-xl font-semibold">Design</button>
+        <button
+          class="whitespace-nowrap px-6 py-4 bg-surface-container-low hover:bg-surface-container-high transition-colors text-on-surface-variant rounded-xl font-semibold">Development</button>
+      </div>
+    </div>
+    <!-- Course Grid (Asymmetric Bento Style) -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+      <!-- DCA (Large Feature) -->
+      <div class="md:col-span-8 group cursor-pointer">
+        <div
+          class="relative h-[450px] rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-2xl transition-all duration-500">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            data-alt="Close-up of a high-tech workstation with dual monitors showing code and system diagnostics in a modern office with blue neon accents"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVNhEw7WEkQfRGAYdRBq0Rh1nLa7T4le4gUuFVq9bwWt0tCkgTUdADksByX66zVYgSEXC98J8bf6K8XbjWn8fGx3P3dX_o5Oub98kRfGYIjfbkYW6qxLi3yue8wjciZeLBfFqDpv6W2cMFCdV7XJ7ge_25_X0cE_x03k5YMlHngb7BhtXBHZD3wdSiv2Ft1C0L9AxWHkL98RGfIF_VAjPCmktZ8ZfQvwiPqCUY3OapAkLFLRKWoTBTa045NOhLTluYP2erRJkc-WL2" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-10 flex flex-col justify-end">
+            <div class="flex items-center gap-3 mb-4">
+              <span
+                class="px-3 py-1 bg-primary text-white text-[10px] font-bold rounded-full uppercase tracking-tighter">Essential</span>
+              <span class="text-white/80 text-sm font-medium">6 Months Certification</span>
+            </div>
+            <h2 class="text-4xl font-bold text-white mb-4">DCA (Diploma in Computer Applications)</h2>
+            <p class="text-white/70 max-w-md mb-8 leading-relaxed">The foundational blueprint for digital literacy.
+              Master office automation, OS architecture, and core computing fundamentals.</p>
+            <div class="flex items-center justify-between">
+              <a class="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-primary-fixed transition-colors" href="dca.html">View
+                Details</a>
+              <div class="flex -space-x-3">
+                <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200"></div>
+                <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-300"></div>
+                <div
+                  class="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center bg-primary text-[10px] text-white font-bold">
+                  +2k</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ADCA -->
+      <div class="md:col-span-4 group cursor-pointer">
+        <div
+          class="h-full bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all border border-outline-variant/10">
+          <div>
+            <div
+              class="w-14 h-14 bg-primary-fixed rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-primary text-3xl">school</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 tracking-tight">ADCA</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Advanced Diploma for career professionals.
+              Deep dive into database management, high-level languages, and complex system workflows.</p>
+          </div>
+          <div>
+            <div class="h-1 bg-surface-container rounded-full mb-6 overflow-hidden">
+              <div class="h-full w-3/4 bg-gradient-to-r from-primary to-primary-container rounded-full"></div>
+            </div>
+            <a href="adca.html" class="text-primary font-bold flex items-center gap-2 group/btn">
+              View Details
+              <span
+                class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Tally -->
+      <div class="md:col-span-4 group cursor-pointer">
+        <div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+          <div class="h-48 relative overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              data-alt="Minimalist overhead shot of a calculator, financial ledger, and high-end fountain pen on a clean white desk with soft shadows"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB48x71wsWvi916Z4MDXvcEZ_0Lq8C7oieTg_FQTQs5oDrmsJWTOrklqdk0DOaMFCy4L7atETmqumleqsdxt73s2tNqYfG7nm0k_k7UUfbpRegqUeLCMyatY8m43ru1EIErXpiOeAa3UmAVNUaRdhpQZCRSZYNjrH7ustZhXyUK5DCaGounEdp4f-ZCAmmzxkripNC1a7r369MI2nfDUYJaxcI0hK7WnbnPh3-claliD4lXBxPn-cS91bg9BIugwhda3-wSa7em6y-h" />
+            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full">
+              <span class="text-xs font-bold text-primary">GST READY</span>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3 class="text-xl font-bold mb-3 tracking-tight">Tally Prime with GST</h3>
+            <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Master the art of digital accounting. From
+              basic bookkeeping to complex tax filings and corporate auditing.</p>
+            <button
+              class="w-full py-3 bg-surface-container-high text-on-surface font-bold rounded-lg hover:bg-primary hover:text-white transition-all">Enroll
+              Course</button>
+          </div>
+        </div>
+      </div>
+      <!-- AutoCAD -->
+      <div class="md:col-span-4 group cursor-pointer">
+        <div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+          <div class="h-48 relative overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              data-alt="Blueprint blueprints and 3D architectural models appearing to lift off a digital tablet with neon blue vector lines"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzAbl4HxooKVxCVUXau3ZTd7pArUSwysUkoM2d-WGA4YSAY2uN1mUYX8X62TW9rNkfbFlKcxdlFvqQ218tjWVqBaPOjF5bXHWhFj_iQwdNIL9HhBF8txQJp3E1_czYElysZMJm1zpsbUW3p9vdyjNAEvwbILx5kRGxldyt_Mvppu-qY95jJu4eeMYBfAWW5Q1W5e95Yzd5FcPUG9EKADQ-3N9zrWwu8jlxyRzY7lBa3NTGXKrtJT2RRIUSR0wLib_gYg-3_53JuSQI" />
+            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full">
+              <span class="text-xs font-bold text-primary">CAD EXPERT</span>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3 class="text-xl font-bold mb-3 tracking-tight">AutoCAD &amp; Drafting</h3>
+            <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Architect your imagination. Learn 2D
+              drafting and 3D modeling used by global engineering and design firms.</p>
+            <button
+              class="w-full py-3 bg-surface-container-high text-on-surface font-bold rounded-lg hover:bg-primary hover:text-white transition-all">Enroll
+              Course</button>
+          </div>
+        </div>
+      </div>
+      <!-- Web Design -->
+      <div class="md:col-span-4 group cursor-pointer">
+        <div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+          <div class="h-48 relative overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              data-alt="Close-up of a vibrant colorful screen showing abstract UI elements, wireframes, and creative color swatches with bokeh light"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLsmbVqhPGuFtapKhQONn4QK-SvKUt0Sh3Rn0LoIcAtDS_HgGlsORip7kgjAczzqDiyK2Z3PnsXlkElwx70x7WoepLJtyk4KwVr4gz6YXkw2FCUzd8btTJmHQsPgd4upBMyP4wTu5sxL7goj6-x8McF5CANDYTCu3P8BfqM16IN131yh58fm_WFAwCsWV6bhLkJWhFCD3j2SQrfDBxstTfXwJKnAljS7Q6P38IUMAga-fmI5yl4whNUqswjg2lhyUAsvTlwIv830bE" />
+            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full">
+              <span class="text-xs font-bold text-primary">UX/UI</span>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3 class="text-xl font-bold mb-3 tracking-tight">Web Design &amp; Dev</h3>
+            <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Become a digital creator. From HTML/CSS to
+              responsive frameworks and user-centric design principles.</p>
+            <button
+              class="w-full py-3 bg-surface-container-high text-on-surface font-bold rounded-lg hover:bg-primary hover:text-white transition-all">Enroll
+              Course</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA Section -->
+    <section class="mt-24 bg-primary rounded-[2rem] p-12 md:p-20 relative overflow-hidden">
+      <div class="absolute -right-20 -top-20 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+      <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-primary-container/20 rounded-full blur-3xl"></div>
+      <div class="relative z-10 max-w-3xl">
+        <h2 class="text-4xl md:text-5xl font-bold text-on-primary mb-6 tracking-tight">Can't decide which path to take?
+        </h2>
+        <p class="text-on-primary/80 text-lg mb-10 leading-relaxed">Speak with our academic advisors to map out a
+          personalized certification roadmap tailored to your career goals.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button
+            class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:scale-[1.05] transition-transform">Get
+            Free Career Counseling</button>
+          <button
+            class="border border-white/30 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all">Download
+            Catalog (PDF)</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="w-full border-t border-slate-200 bg-slate-50">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+      <div class="md:col-span-1">
+        <div class="text-xl font-bold text-slate-900 mb-6">Chitransh Institute</div>
+        <p class="text-slate-500 text-sm leading-relaxed mb-6">Empowering the next generation of technical architects
+          with precision-led computer education.</p>
+        <div class="flex gap-4">
+          <div
+            class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all cursor-pointer">
+            <span class="material-symbols-outlined text-sm">public</span>
+          </div>
+          <div
+            class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all cursor-pointer">
+            <span class="material-symbols-outlined text-sm">share</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Resources</h4>
+        <ul class="space-y-4">
+          <li><a class="text-slate-500 hover:text-blue-500 transition-colors text-sm underline-offset-4 hover:underline"
+              href="#">Course Catalog</a></li>
+          <li><a class="text-slate-500 hover:text-blue-500 transition-colors text-sm underline-offset-4 hover:underline"
+              href="#">Certification Verifier</a></li>
+          <li><a class="text-slate-500 hover:text-blue-500 transition-colors text-sm underline-offset-4 hover:underline"
+              href="#">Student Portal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Network</h4>
+        <ul class="space-y-4">
+          <li><a class="text-slate-500 hover:text-blue-500 transition-colors text-sm underline-offset-4 hover:underline"
+              href="#">Alumni Network</a></li>
+          <li><a class="text-slate-500 hover:text-blue-500 transition-colors text-sm underline-offset-4 hover:underline"
+              href="#">Placement Cell</a></li>
+          <li><a class="text-slate-500 hover:text-blue-500 transition-colors text-sm underline-offset-4 hover:underline"
+              href="#">Corporate Training</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Legal</h4>
+        <ul class="space-y-4">
+          <li><a class="text-slate-500 hover:text-blue-500 transition-colors text-sm underline-offset-4 hover:underline"
+              href="#">Privacy Policy</a></li>
+          <li><a class="text-slate-500 hover:text-blue-500 transition-colors text-sm underline-offset-4 hover:underline"
+              href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200 text-center">
+      <p class="text-slate-500 text-sm">© 2024 Chitransh Computer Institute. Architects of the Digital Future.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
